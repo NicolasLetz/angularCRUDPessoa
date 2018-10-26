@@ -1,0 +1,22 @@
+<fieldset>
+  <legend>Lista pessoas</legend>
+  <table>
+    <thead>
+      <tr>
+        <th>NOME</th>
+        <th>Cpf</th>
+        <th>email</th>
+        <th colspan="2">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pessoa of pessoas">
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.cpf}}</td>
+        <td>{{pessoa.email}}</td>
+        <td><button [routerLink]="['edit/', pessoa.cpf]">E</button></td>
+        <td><button [routerLink]="[ '/exclude', pessoa.cpf ]">X</button></td>
+      </tr>
+    </tbody>
+  </table>
+</fieldset>

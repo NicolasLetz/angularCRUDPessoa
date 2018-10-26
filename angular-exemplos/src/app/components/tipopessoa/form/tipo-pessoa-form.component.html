@@ -1,0 +1,13 @@
+<fieldset>
+  nome<input type="text" [(ngModel)]="pessoa.nome"><br>
+  cpf<input type="text" [(ngModel)]="pessoa.cpf"><br>
+  email<input type="text" [(ngModel)]="pessoa.email"><br>
+  cep<input type="text" [(ngModel)]="pessoa.endereco.cep"><br>
+  logradouro<input type="text" [(ngModel)]="pessoa.endereco.logradouro"><br>
+  numero<input type="text" [(ngModel)]="pessoa.endereco.numero"><br>
+  complemento<input type="text" [(ngModel)]="pessoa.endereco.complemento"><br>
+  bairro<input type="text" [(ngModel)]="pessoa.endereco.bairro"><br>
+  cidade<input type="text" [(ngModel)]="pessoa.endereco.cidade"><br>
+  uf<input type="text" [(ngModel)]="pessoa.endereco.uf"><br>
+  {{pessoa.endereco.uf}}
+</fieldset>
